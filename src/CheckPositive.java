@@ -1,13 +1,9 @@
 /* isPositive(...) virker, men kan simplificeres lidt */
 
 void main() {
-    IO.println(isPositive(-5));
+    isPositive(-5);
 }
 
-boolean isPositive(int number) {
-    if (number > 0) {
-        return true;
-    } else {
-        return false;
-    }
+void isPositive(int number) {
+    IO.println((number > 0) ? (number + " is positive") : (number + " is negative"));
 }
